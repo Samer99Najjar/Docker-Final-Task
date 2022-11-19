@@ -37,7 +37,7 @@ def get_last_avg():
     sum=0
     for bit in bitcoin_history:
         sum+=float(bit['price'])
-    sum=sum/10
+    sum=sum/3
     print(sum)
     return sum
 
@@ -45,10 +45,11 @@ def get_last_avg():
 
 @app.route('/')
 def hello():
-    #count = get_hit_count()
+    count = get_bit_coin_price()
+    mystr2 ="The current price of BitCoin is:         "+ str(count)+'\n'
     sum=get_last_avg()
-    mystr= "the average pice in last 10 mins is :" +str(sum)
-    return mystr
+    mystr= "\n   The average price of BitCoin in last 10 mins is :" +str(sum)
+    return (mystr2+mystr)
 
 if __name__ == "__main__":
     app.run(host = "0.0.0.0")
