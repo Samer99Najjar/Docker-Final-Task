@@ -48,7 +48,7 @@ The stream data type enables high-speed data ingestion, messaging, event sourcin
  
 # Website Demo
 
-![alt text](https://github.com/Samer99Najjar/Docker-Final-Task/blob/main/webdemo2.PNG)
+![alt text](https://github.com/Samer99Najjar/Docker-Final-Task/blob/main/last-web-demo.PNG)
 
 # Jenkins pipeline Job
 Used Jenkins to build and publish the application to Docker Hub. Create a token from Docker to push the 

@@ -30,14 +30,14 @@ def get_last_avg():
         price= get_bit_coin_price()
         date= datetime.now()
         bitcoin_history.append({'date': date, 'price': price})
-        if len(bitcoin_history) ==3 :
+        if len(bitcoin_history) ==10 :
             break
-        time.sleep(5)
+        time.sleep(60)
     #print(bitcoin_history)
     sum=0
     for bit in bitcoin_history:
         sum+=float(bit['price'])
-    sum=sum/3
+    sum=sum/10
     print(sum)
     return sum
 
