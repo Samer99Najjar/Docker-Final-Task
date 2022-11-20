@@ -42,6 +42,9 @@ The stream data type enables high-speed data ingestion, messaging, event sourcin
 
 > http://localhost:8003/
 
+small note: when running the localhost you need to wait 10 mins because my code starts taking the bitcoin price from the minute you active the 
+browser 
+
 ## Stop the server
 > docker compose down
  
